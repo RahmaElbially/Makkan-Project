@@ -1,0 +1,22 @@
+@import "../Helpers/variables";
+
+$smallMobileScreen : "(max-width: 480px)";
+$mobileScreen: "(max-width: 500px)";
+$largeMobileScreen: "(max-width: 768px)";
+$tabletScreen: "(max-width: 991px) and (min-width: 769px)";
+$smallLabScreen: "(max-width: 1200px) and (min-width: 992px)";
+$largeLabScreen: "(max-width: 1400px) and (min-width: 1201px)";
+
+.card{
+    border: none;
+}
+
+.section-space{
+    margin: 6rem auto;
+    padding: 0 2rem
+}
+
+.active-btn{
+    background-color: $primaryColor;
+    color: #fff;
+}

@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/all.css">
+    <link rel="stylesheet" href="CSS/homePage.css">
+    <title>MAKKAN</title>
+</head>
+<body>
+    
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"><img src="Images/icon-deal.png" alt=""> makkan</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Property</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Pages</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link main-btn" href="#" id="add-property">Add Property</a></li>
+                </ul>
+              </div>
+            </div>
+        </nav>
+    </header> <!-- End Header -->
+
+    <section class="carousal-section">
+        <div class="row flex-md-row flex-column-reverse">
+            <div class="carousal-data col-md-6 col-12">
+                <h1>Find A <span>Perfect Home</span> To Live With Your Family</h1>
+                <p>
+                    Vero elitr justo clita lorem. Ipsum dolor at sed stetsit diam no. 
+                    Kasd rebum ipsum et diam justo clita et kasd rebum sea elitr.
+                </p>
+                <button class="main-btn">Get Started</button>
+            </div> <!-- End Carousal Data -->
+            <div class="carousal-image col-md-6 col-12">
+                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="Images/carousel-1.jpg" class="d-block w-100" alt="">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="Images/carousel-2.jpg" class="d-block w-100" alt="">
+                        </div>
+                    </div>
+                </div> <!-- End Carousal Slide -->
+                <div class="carousal-buttons">
+                    <i class="fas fa-chevron-left carousal-btn" type="button" 
+                    data-bs-target="#carouselExampleControls" data-bs-slide="prev"></i>
+
+                    <i class="fas fa-chevron-right carousal-btn" type="button"
+                     data-bs-target="#carouselExampleControls" data-bs-slide="next"></i>
+                </div> <!-- End CarousalButtons -->
+            </div> <!-- End Carousal Image -->
+        </div> <!-- End Row -->
+    </section> <!-- End Carsual -->
+
+    <section class="search">
+        <div class="row search-inputs">
+            <input class="col-md-3 col-12 input" type="text" placeholder="Search Keyword">
+            <select class="col-md-3 col-12 select">
+                <option value="Property Type">Property Type</option>
+                <option value="Property Type 1">Property Type 1</option>
+                <option value="Property Type 2">Property Type 2</option>
+                <option value="Property Type 3">Property Type 3</option>
+            </select>
+            <select class="col-md-3 col-12 select">
+                <option value="Location">Location</option>
+                <option value="Location">Location 1</option>
+                <option value="Location">Location 2</option>
+                <option value="Location">Location 3</option>
+            </select>
+            <input class="col-md-2 col-12 input" type="submit" value="Search">
+        </div> <!-- End Search Inputs -->
+    </section> <!-- End Search -->
+
+    <section class="property-type section-space">
+       <div class="property-type-head" data-aos="fade-up" data-aos-duration="1000">
+            <h2 class="section-heading">Property Types</h2>
+            <p class="section-p">
+                Eirmod sed ipsum dolor sit rebum labore magna erat. Tempor ut dolore lorem kasd vero ipsum sit eirmod sit. 
+                Ipsum diam justo sed rebum vero dolor duo.
+            </p>
+       </div> <!-- End Property Type Head -->
+        <div class="properties row">
+            <div class="col-lg-3 col-sm-6 col-12">
+                <div class="property card" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="card-body property-data">
+                        <div class="property-icon">
+                            <img src="images/icon-apartment.png" alt="">
+                        </div>
+                        <h3 class="property-data-h3">Apartment</h3>
+                        <p class="property-data-p">123 Properties</p>
+                    </div> <!-- End Property Data -->
+                </div>  <!-- End Property -->
+            </div> <!-- End Col -->
+
+           <div class="col-lg-3 col-sm-6 col-12">
+                <div class="property card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+                    <div class="card-body property-data">
+                        <div class="property-icon">
+                            <img src="images/icon-villa.png" alt="">
+                        </div>
+                        <h3 class="property-data-h3">Villa</h3>
+                        <p class="property-data-p">123 Properties</p>
+                    </div> <!-- End Property Data -->
+                </div>  <!-- End Property -->
+           </div> <!-- End Col -->
+
+            <div class="col-lg-3 col-sm-6 col-12">
+                <div class="property card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
+                    <div class="card-body property-data">
+                        <div class="property-icon">
+                            <img src="images/icon-house.png" alt="">
+                        </div>
+                        <h3 class="property-data-h3">Home</h3>
+                        <p class="property-data-p">123 Properties</p>
+                    </div> <!-- End Property Data -->
+                </div>  <!-- End Property -->
+            </div> <!-- End Col -->
+
+            <div class=" col-lg-3 col-sm-6 col-12">
+                <div class="property card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="700">
+                    <div class="card-body property-data">
+                        <div class="property-icon">
+                            <img src="images/icon-housing.png" alt="">
+                        </div>
+                        <h3 class="property-data-h3">Office</h3>
+                        <p class="property-data-p">123 Properties</p>
+                    </div> <!-- End Property Data -->
+                </div> <!-- End Property -->
+            </div> <!-- End Col -->
+
+            <div class="col-lg-3 col-sm-6 col-12">
+                <div class="property card" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="card-body property-data">
+                        <div class="property-icon">
+                            <img src="images/icon-building.png" alt="">
+                        </div>
+                        <h3 class="property-data-h3">Building</h3>
+                        <p class="property-data-p">123 Properties</p>
+                    </div> <!-- End Property Data -->
+                </div>  <!-- End Property -->
+            </div> <!-- End Col -->
+
+            <div class="col-lg-3 col-sm-6 col-12">
+                <div class="property card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+                    <div class="card-body property-data">
+                        <div class="property-icon">
+                            <img src="images/icon-neighborhood.png" alt="">
+                        </div>
+                        <h3 class="property-data-h3">Townhouse</h3>
+                        <p class="property-data-p">123 Properties</p>
+                    </div> <!-- End Property Data -->
+                </div>  <!-- End Property -->
+            </div> <!-- End Col -->
+
+            <div class="col-lg-3 col-sm-6 col-12">
+                <div class="property card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
+                    <div class="card-body property-data">
+                        <div class="property-icon">
+                            <img src="images/icon-condominium.png" alt="">
+                        </div>
+                        <h3 class="property-data-h3">Shop</h3>
+                        <p class="property-data-p">123 Properties</p>
+                    </div> <!-- End Property Data -->
+                </div>  <!-- End Property -->
+            </div> <!-- End Col -->
+
+            <div class="col-lg-3 col-sm-6 col-12">
+                <div class="property card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="700">
+                    <div class="card-body property-data">
+                        <div class="property-icon">
+                            <img src="images/icon-luxury.png" alt="">
+                        </div>
+                        <h3 class="property-data-h3">Garage</h3>
+                        <p class="property-data-p">123 Properties</p>
+                    </div> <!-- End Property Data -->
+                </div> <!-- End Property -->
+            </div> <!-- End Col -->
+
+        </div> <!-- End Properties -->
+    </section> <!-- End Property Type -->
+
+    <section class="perfect-place">
+        <div class="row">
+            <div class="perfect-place-image col-lg-6">
+                <div class="clipped-div"></div> <!-- End Clipped Div -->
+                <div class="image-div">
+                    <img src="images/about.jpg" alt="">
+                </div> <!-- End Image Div -->
+            </div> <!-- End Perfect Place Image -->
+
+            <div class="perfect-place-data col-lg-6" data-aos="fade-zoom-in" data-aos-easing="ease-in-back"
+            data-aos-duration="1000">
+                <h3 class="section-heading">#1 Place To Find The Perfect Property</h3>
+                <p class="perfect-data-p">
+                    Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. 
+                    Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet
+                </p>
+                <div class="pefect-place-check">
+                    <p><span><i class="fas fa-check"></i>Tempor erat elitr rebum at clita</span></p>
+                    <p><span><i class="fas fa-check"></i>Aliqu diam amet diam et eos</span></p>
+                    <p><span><i class="fas fa-check"></i>Clita duo justo magna dolore erat amet</span></p>
+                </div> <!-- End Perfect Place Check -->
+                <button class="main-btn">Read More</button>
+            </div> <!-- End Perfect Place Data -->
+        </div> <!-- End Row -->
+    </section> <!-- End Perfect Place -->
+
+    <section class="property-listing section-space">
+        <h2 class="section-heading" data-aos="fade-right" data-aos-duration="1000">Property Listing</h2>
+        <div class="row property-listing-p-btn justify-content-between align-items-center">
+            <div class="col-lg-8">
+                <p class="property-listing-p" data-aos="fade-right" data-aos-duration="1000">
+                    Eirmod sed ipsum dolor sit rebum labore magna erat. Tempor ut dolore lorem kasd vero 
+                    ipsum sit eirmod sit diam justo sed rebum.
+                </p>
+            </div>
+            <div class="property-listing-btns col-lg-4" data-aos="fade-left" data-aos-duration="1000">
+                <button class="second-btn active-btn" data-cat=".all">Featured</button>
+                <button class="second-btn" data-cat=".sell">For Sell</button>
+                <button class="second-btn" data-cat=".rent">For Rent</button>
+            </div>
+        </div> <!-- End Property Listing P Btn -->
+
+        <div class="property-listing-cards">
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6 col-12 all sell">
+                    <div class="card property-listing-card" data-aos="fade-up" data-aos-duration="1000">
+                        <div class="card-image position-relative overflow-hidden">
+                            <button class="main-btn card-btn">For Sell</button>
+                            <img src="Images/property-1.jpg" class="card-img-top" alt="...">
+                            <button class="type-card-btn">Appartment</button>
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title">$12,345</h5>
+                          <a href="#" class="card-link">golden urban house for sell</a>
+                          <p class="card-text"><span><i class="fas fa-map-marker-alt"></i></span>123 Street, New York, USA</p>
+                        </div> <!-- End Card Body -->
+                        <div class="card-footer">
+                            <small><i class="fa fa-ruler-combined"></i>1000 Sqft</small>
+                            <small class="different-small"><i class="fa fa-bed"></i>3 Bed</small>
+                            <small class="left"><i class="fa fa-bath"></i>2 Bath</small>
+                        </div> <!-- End Card Footer -->
+                    </div> <!-- End Property Listing Card -->
+                </div> <!-- End Col-4 -->
+
+                <div class="col-lg-4 col-md-6 col-12 all rent">
+                    <div class="card property-listing-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+                        <div class="card-image position-relative overflow-hidden">
+                            <button class="main-btn card-btn">For Rent</button>
+                            <img src="Images/property-2.jpg" class="card-img-top" alt="...">
+                            <button class="type-card-btn">Villa</button>
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title">$12,345</h5>
+                          <a href="#" class="card-link">golden urban house for sell</a>
+                          <p class="card-text"><span><i class="fas fa-map-marker-alt"></i></span>123 Street, New York, USA</p>
+                        </div> <!-- End Card Body -->
+                        <div class="card-footer">
+                            <small><i class="fa fa-ruler-combined"></i>1000 Sqft</small>
+                            <small class="different-small"><i class="fa fa-bed"></i>3 Bed</small>
+                            <small class="left"><i class="fa fa-bath"></i>2 Bath</small>
+                        </div> <!-- End Card Footer -->
+                    </div> <!-- End Property Listing Card -->
+                </div> <!-- End Col-4 -->
+                
+                <div class="col-lg-4 col-md-6 col-12 all sell">
+                    <div class="card property-listing-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
+                        <div class="card-image position-relative overflow-hidden">
+                            <button class="main-btn card-btn">For Sell</button>
+                            <img src="Images/property-3.jpg" class="card-img-top" alt="...">
+                            <button class="type-card-btn">Office</button>
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title">$12,345</h5>
+                          <a href="#" class="card-link">golden urban house for sell</a>
+                          <p class="card-text"><span><i class="fas fa-map-marker-alt"></i></span>123 Street, New York, USA</p>
+                        </div> <!-- End Card Body -->
+                        <div class="card-footer">
+                            <small><i class="fa fa-ruler-combined"></i>1000 Sqft</small>
+                            <small class="different-small"><i class="fa fa-bed"></i>3 Bed</small>
+                            <small class="left"><i class="fa fa-bath"></i>2 Bath</small>
+                        </div> <!-- End Card Footer -->
+                    </div> <!-- End Property Listing Card -->
+                </div> <!-- End Col-4 -->
+
+                <div class="col-lg-4 col-md-6 col-12 all rent">
+                    <div class="card property-listing-card" data-aos="fade-up" data-aos-duration="1000">
+                        <div class="card-image position-relative overflow-hidden">
+                            <button class="main-btn card-btn">For Rent</button>
+                            <img src="Images/property-4.jpg" class="card-img-top" alt="...">
+                            <button class="type-card-btn">Building</button>
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title">$12,345</h5>
+                          <a href="#" class="card-link">golden urban house for sell</a>
+                          <p class="card-text"><span><i class="fas fa-map-marker-alt"></i></span>123 Street, New York, USA</p>
+                        </div> <!-- End Card Body -->
+                        <div class="card-footer">
+                            <small><i class="fa fa-ruler-combined"></i>1000 Sqft</small>
+                            <small class="different-small"><i class="fa fa-bed"></i>3 Bed</small>
+                            <small class="left"><i class="fa fa-bath"></i>2 Bath</small>
+                        </div> <!-- End Card Footer -->
+                    </div> <!-- End Property Listing Card -->
+                </div> <!-- End Col-4 -->
+
+                <div class="col-lg-4 col-md-6 col-12 all sell">
+                    <div class="card property-listing-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+                        <div class="card-image position-relative overflow-hidden">
+                            <button class="main-btn card-btn">For Sell</button>
+                            <img src="Images/property-5.jpg" class="card-img-top" alt="...">
+                            <button class="type-card-btn">Home</button>
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title">$12,345</h5>
+                          <a href="#" class="card-link">golden urban house for sell</a>
+                          <p class="card-text"><span><i class="fas fa-map-marker-alt"></i></span>123 Street, New York, USA</p>
+                        </div> <!-- End Card Body -->
+                        <div class="card-footer">
+                            <small><i class="fa fa-ruler-combined"></i>1000 Sqft</small>
+                            <small class="different-small"><i class="fa fa-bed"></i>3 Bed</small>
+                            <small class="left"><i class="fa fa-bath"></i>2 Bath</small>
+                        </div> <!-- End Card Footer -->
+                    </div> <!-- End Property Listing Card -->
+                </div> <!-- End Col-4 -->
+                
+                <div class="col-lg-4 col-md-6 col-12 all rent">
+                    <div class="card property-listing-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
+                        <div class="card-image position-relative overflow-hidden">
+                            <button class="main-btn card-btn">For Sell</button>
+                            <img src="Images/property-6.jpg" class="card-img-top" alt="...">
+                            <button class="type-card-btn">Shop</button>
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title">$12,345</h5>
+                          <a href="#" class="card-link">golden urban house for sell</a>
+                          <p class="card-text"><span><i class="fas fa-map-marker-alt"></i></span>123 Street, New York, USA</p>
+                        </div> <!-- End Card Body -->
+                        <div class="card-footer">
+                            <small><i class="fa fa-ruler-combined"></i>1000 Sqft</small>
+                            <small class="different-small"><i class="fa fa-bed"></i>3 Bed</small>
+                            <small class="left"><i class="fa fa-bath"></i>2 Bath</small>
+                        </div> <!-- End Card Footer -->
+                    </div> <!-- End Property Listing Card -->
+                </div> <!-- End Col-4 -->
+            </div> <!-- End Row -->
+        </div> <!-- End Property Listing Cards -->
+
+        <div class="more-property text-center" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+            <button class="main-btn">Browse More Property</button>
+        </div>
+    </section> <!-- End Property Listing -->
+
+    <section class="contact section-space">
+        <div class="contact-div">
+            <div class="row">
+                <div class="col-lg-6 col-12">
+                    <img src="Images/call-to-action.jpg" alt="">
+                </div> <!-- End Col -->
+                
+                <div class="col-lg-6 col-12 contact-data" data-aos="fade-zoom-in" data-aos-easing="ease-in-back"
+                data-aos-duration="1000">
+                    <h3 class="section-heading">Contact With Our Certified Agent</h3>
+                    <p>
+                        Eirmod sed ipsum dolor sit rebum magna erat. Tempor lorem kasd vero ipsum sit sit diam 
+                        justo sed vero dolor duo.
+                    </p>
+                    <button class="main-btn"><i class="fas fa-phone-alt"></i> Make a Call</button>
+                    <button class="main-btn"><i class="fas fa-calendar-alt"></i> Get Appointment</button>
+                </div> <!-- End Col -->
+            </div> <!-- End Row -->
+        </div> <!-- End Contact Div -->
+    </section> <!-- End Contact -->
+
+    <section class="property-agent section-space">
+        <div class="property-agent-head" data-aos="fade-up" data-aos-duration="1000">
+            <h2 class="section-heading">Property Agents</h2>
+            <p class="section-p">
+                Eirmod sed ipsum dolor sit rebum labore magna erat. Tempor ut dolore lorem kasd vero 
+                ipsum sit eirmod sit. Ipsum diam justo sed rebum vero dolor duo.
+            </p>
+        </div> <!-- End Property Agent Head -->
+        <div class="row">
+            <div class="col-lg-3 col-md-6 col-12 position-relative">
+                <div class="property-agent-div" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="property-agent-image">
+                        <img src="Images/team-1.jpg" alt="">
+                    </div> <!-- End Property Agent Image -->
+                    <div class="property-agent-social d-flex">
+                        <div class="social"><i class="fab fa-facebook-f"></i></div>
+                        <div class="social"><i class="fab fa-twitter"></i></div>
+                        <div class="social"><i class="fab fa-instagram"></i></div>
+                    </div> <!-- End Social -->
+                    <div class="property-agent-data">
+                        <h3 class="section-heading">Full Name</h3>
+                        <p class="section-p">Designation</p>
+                    </div> <!-- End Property Agent Data -->
+                </div> <!-- End Property Agent Div -->
+            </div> <!-- End Col -->
+
+            <div class="col-lg-3 col-md-6 col-12 position-relative">
+                <div class="property-agent-div" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+                    <div class="property-agent-image">
+                        <img src="Images/team-2.jpg" alt="">
+                    </div> <!-- End Property Agent Image -->
+                    <div class="property-agent-social d-flex">
+                        <div class="social"><i class="fab fa-facebook-f"></i></div>
+                        <div class="social"><i class="fab fa-twitter"></i></div>
+                        <div class="social"><i class="fab fa-instagram"></i></div>
+                    </div> <!-- End Social -->
+                    <div class="property-agent-data">
+                        <h3 class="section-heading">Full Name</h3>
+                        <p class="section-p">Designation</p>
+                    </div> <!-- End Property Agent Data -->
+                </div> <!-- End Property Agent Div -->
+            </div> <!-- End Col -->
+
+           <div class="col-lg-3 col-md-6 col-12 position-relative">
+                <div class="property-agent-div" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
+                    <div class="property-agent-image">
+                        <img src="Images/team-3.jpg" alt="">
+                    </div> <!-- End Property Agent Image -->
+                    <div class="property-agent-social d-flex">
+                        <div class="social"><i class="fab fa-facebook-f"></i></div>
+                        <div class="social"><i class="fab fa-twitter"></i></div>
+                        <div class="social"><i class="fab fa-instagram"></i></div>
+                    </div> <!-- End Social -->
+                    <div class="property-agent-data">
+                        <h3 class="section-heading">Full Name</h3>
+                        <p class="section-p">Designation</p>
+                    </div> <!-- End Property Agent Data -->
+                </div> <!-- End Property Agent Div -->
+            </div> <!-- End Col -->
+
+            <div class="col-lg-3 col-md-6 col-12 position-relative">
+                <div class="property-agent-div" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="700">
+                    <div class="property-agent-image">
+                        <img src="Images/team-4.jpg" alt="">
+                    </div> <!-- End Property Agent Image -->
+                    <div class="property-agent-social d-flex">
+                        <div class="social"><i class="fab fa-facebook-f"></i></div>
+                        <div class="social"><i class="fab fa-twitter"></i></div>
+                        <div class="social"><i class="fab fa-instagram"></i></div>
+                    </div> <!-- End Social -->
+                    <div class="property-agent-data">
+                        <h3 class="section-heading">Full Name</h3>
+                        <p class="section-p">Designation</p>
+                    </div> <!-- End Property Agent Data -->
+                </div> <!-- End Property Agent Div -->
+            </div> <!-- End Col -->
+        </div> <!-- End Row -->
+    </section> <!-- End Property Agent -->
+
+    <section class="feedback section-space">
+        <div class="feedback-head" data-aos="fade-up" data-aos-duration="1000">
+            <h2 class="section-heading">Our Clients Say!</h2>
+            <p class="section-p">
+                Eirmod sed ipsum dolor sit rebum labore magna erat. Tempor ut dolore lorem kasd vero ipsum sit eirmod sit. 
+                Ipsum diam justo sed rebum vero dolor duo.
+            </p>
+        </div> <!-- End Feedback Head -->
+        <div class="feedback-content" data-aos="fade-up" data-aos-duration="1000">
+            <div class="row align-items-center flex-nowrap">
+                <div class="col-1">
+                    <button class="left-arrow"><i class="fas fa-arrow-left"></i></button>
+                </div> <!-- End Col-1 -->
+
+                <div class="col-10 feedback-slider">
+                    <div class="row flex-nowrap">
+                        <div class="col-lg-6">
+                            <div class="feedback-client">
+                                <div class="feedback-client-content">
+                                    <p>
+                                        Tempor stet labore dolor clita stet diam amet ipsum dolor duo ipsum rebum stet dolor amet diam
+                                        stet. Est stet ea lorem amet est kasd kasd erat eos
+                                    </p>
+                                    <div class="row client-data align-items-center">
+                                        <div class="col-2">
+                                            <div class="client-image">
+                                                <img class="rounded" src="Images/testimonial-1.jpg" alt="">
+                                            </div> <!-- End Client Image -->
+                                        </div> <!-- End Inner Col -->
+        
+                                        <div class="col-10">
+                                            <div class="client-name">
+                                                <h3 class="section-heading">Client Name</h3>
+                                                <p class="section-p">Profession</p>
+                                            </div> <!-- End Client Name -->
+                                        </div> <!-- End Inner Col -->
+        
+                                    </div> <!-- End Inner Row ==> Client Data -->
+                                </div> <!-- End Feedback Client Content -->
+                            </div> <!-- End Feedback Client -->
+                        </div> <!-- End Col -->
+        
+                        <div class="col-lg-6">
+                            <div class="feedback-client">
+                                <div class="feedback-client-content">
+                                    <p>
+                                        Tempor stet labore dolor clita stet diam amet ipsum dolor duo ipsum rebum stet dolor amet diam
+                                        stet. Est stet ea lorem amet est kasd kasd erat eos
+                                    </p>
+                                    <div class="row client-data align-items-center">
+                                        <div class="col-2">
+                                            <div class="client-image">
+                                                <img class="rounded" src="Images/testimonial-2.jpg" alt="">
+                                            </div> <!-- End Client Image -->
+                                        </div> <!-- End Inner Col -->
+        
+                                        <div class="col-10">
+                                            <div class="client-name">
+                                                <h3 class="section-heading">Client Name</h3>
+                                                <p class="section-p">Profession</p>
+                                            </div> <!-- End Client Name -->
+                                        </div> <!-- End Inner Col -->
+
+                                    </div> <!-- End Inner Row ==> Client Data -->
+                                </div> <!-- End Feedback Client Content -->
+                            </div> <!-- End Feedback Client -->
+                        </div> <!-- End Col -->
+        
+        
+                        <div class="col-lg-6">
+                            <div class="feedback-client">
+                                <div class="feedback-client-content">
+                                    <p>
+                                        Tempor stet labore dolor clita stet diam amet ipsum dolor duo ipsum rebum stet dolor amet diam
+                                        stet. Est stet ea lorem amet est kasd kasd erat eos
+                                    </p>
+                                    <div class="row client-data align-items-center">
+                                        <div class="col-2">
+                                            <div class="client-image">
+                                                <img class="rounded" src="Images/testimonial-3.jpg" alt="">
+                                            </div> <!-- End Client Image -->
+                                        </div> <!-- End Inner Col -->
+        
+                                        <div class="col-10">
+                                            <div class="client-name">
+                                                <h3 class="section-heading">Client Name</h3>
+                                                <p class="section-p">Profession</p>
+                                            </div> <!-- End Client Name -->
+                                        </div> <!-- End Inner Col -->
+        
+                                    </div> <!-- End Inner Row ==> Client Data -->
+                                </div> <!-- End Feedback Client Content -->
+                            </div> <!-- End Feedback Client -->
+                        </div> <!-- End Col -->
+        
+        
+                        <div class="col-lg-6">
+                            <div class="feedback-client">
+                                <div class="feedback-client-content">
+                                    <p>
+                                        Tempor stet labore dolor clita stet diam amet ipsum dolor duo ipsum rebum stet dolor amet diam
+                                        stet. Est stet ea lorem amet est kasd kasd erat eos
+                                    </p>
+                                    <div class="row client-data align-items-center">
+                                        <div class="col-2">
+                                            <div class="client-image">
+                                                <img class="rounded" src="Images/testimonial-4.jpg" alt="">
+                                            </div> <!-- End Client Image -->
+                                        </div> <!-- End Inner Col -->
+        
+                                        <div class="col-10">
+                                            <div class="client-name">
+                                                <h3 class="section-heading">Client Name</h3>
+                                                <p class="section-p">Profession</p>
+                                            </div> <!-- End Client Name -->
+                                        </div> <!-- End Inner Col -->
+        
+                                    </div> <!-- End Inner Row ==> Client Data -->
+                                </div> <!-- End Feedback Client Content -->
+                            </div> <!-- End Feedback Client -->
+                        </div> <!-- End Col -->
+        
+                    </div> <!-- End Row -->
+                </div> <!-- End Col-10 -->
+                
+                <div class="col-1">
+                    <button class="right-arrow"><i class="fas fa-arrow-right"></i></button>
+                </div> <!-- End Col-1 -->
+            </div> <!-- End Row -->
+        </div> <!-- End Feedback Content -->
+    </section> <!-- End Feedback -->
+
+    <footer>
+        <div class="row">
+            <div class="col-lg-3 col-md-6">
+                <div class="footer-info-data">
+                    <h3 class="footer-heading">Get In Touch</h3>
+                    <ul class="footer-info">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Street, New York, USA</li>
+                        <li><i class="fas fa-phone-alt"></i> +012 345 67890</li>
+                        <li><i class="fas fa-envelope"></i> info@example.com</li>
+                    </ul>
+                    <ul class="footer-social-media d-flex">
+                        <li class="social-media"><i class="fab fa-twitter"></i></li>
+                        <li class="social-media"><i class="fab fa-facebook-f"></i></li>
+                        <li class="social-media"><i class="fab fa-youtube"></i></li>
+                        <li class="social-media"><i class="fab fa-linkedin-in"></i></li>
+                    </ul>
+                </div> <!-- End Footer Info Data -->
+            </div> <!-- End Col -->
+
+            <div class="col-lg-3 col-md-6">
+                <div class="footer-quick-links">
+                    <h3 class="footer-heading">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-chevron-right"></i><a href="#">About Us</a></li>
+                        <li><i class="fas fa-chevron-right"></i><a href="#">Contact Us</a></li>
+                        <li><i class="fas fa-chevron-right"></i><a href="#">Our Services</a></li>
+                        <li><i class="fas fa-chevron-right"></i><a href="#">Privacy Policy</a></li>
+                        <li><i class="fas fa-chevron-right"></i><a href="#">Terms & Condition</a></li>
+                    </ul>
+                </div> <!-- End Footer Quick Links -->
+            </div> <!-- End Col -->
+
+            <div class="col-lg-3 col-md-6">
+                <div class="footer-gallary">
+                    <h3 class="footer-heading">Photo Gallery</h3>
+                    <div class="image-gallary row">
+                        <div class="col-4"><div class="footer-image"><img src="Images/property-1.jpg" alt=""></div></div>
+                        <div class="col-4"><div class="footer-image"><img src="Images/property-2.jpg" alt=""></div></div>
+                        <div class="col-4"><div class="footer-image"><img src="Images/property-3.jpg" alt=""></div></div>
+                        <div class="col-4"><div class="footer-image"><img src="Images/property-4.jpg" alt=""></div></div>
+                        <div class="col-4"><div class="footer-image"><img src="Images/property-5.jpg" alt=""></div></div>
+                        <div class="col-4"><div class="footer-image"><img src="Images/property-6.jpg" alt=""></div></div>
+                    </div> 
+                </div> <!-- End Footer Gallary -->
+            </div> <!-- End Col -->
+
+            <div class="col-lg-3 col-md-6">
+                <div class="footer-newsletter">
+                    <h3 class="footer-heading">Newsletter</h3>
+                    <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
+                    <div class="form">
+                        <input type="email" placeholder="Your Email">
+                        <button class="main-btn">Sign Up</button>
+                    </div>
+                </div> <!-- End Footer Newsletter -->
+            </div> <!-- End Col -->
+
+        </div> <!-- End Row -->
+    </footer> <!-- End Footer -->
+
+    <div class="upToTopBtn">
+        <button><i class="fas fa-arrow-up"></i></button>
+    </div>
+
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+    <script src="JS/bootstrap.bundle.min.js"></script>
+    <script src="JS/main.js"></script>
+</body>
+</html>

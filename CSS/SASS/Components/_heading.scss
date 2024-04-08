@@ -1,0 +1,42 @@
+@import "../Helpers/variables";
+
+.section-heading{
+    font-size: 40px;
+    color: $darkColor;
+    font-weight: 700;
+    @media #{$smallLabScreen} {
+        font-size: 38px;
+    }
+    @media #{$tabletScreen} {
+        font-size: 35px;
+    }
+    @media #{$largeMobileScreen} {
+        font-size: 30px;
+    }
+}
+
+.section-p{
+    width: 42%;
+    margin: 1rem auto;
+    line-height: 1.7;
+    @media #{$largeLabScreen} {
+        width: 48%;
+    }
+    @media #{$smallLabScreen} {
+        width: 65%;
+    }
+    @media #{$tabletScreen} {
+        width: 85%;
+        line-height: 1.5;
+    }
+    @media #{$largeMobileScreen} {
+        width: 90%;
+        line-height: 1.5;
+    }
+}
+
+.footer-heading{
+    font-size: 25px;
+    color: #fff;
+    font-weight: 700;
+}

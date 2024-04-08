@@ -1,0 +1,93 @@
+header{
+    background-color: #fff;
+    padding: 0 20px;
+    position: fixed;
+    z-index: 5;
+    width: 90%;
+    left: 5%;
+    top: 5%;
+    transition: all 0.5s;
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.1);
+    @media #{$tabletScreen} {
+        width: 100% !important;
+        top: 0 !important;
+        left: 0 !important;
+    }
+    @media #{$largeMobileScreen} {
+        width: 100% !important;
+        top: 0 !important;
+        left: 0 !important;
+    }
+    @media #{$smallMobileScreen} {
+        width: 100% !important;
+        left: 0 !important;
+        top: 0 !important;
+        padding: 0 !important;
+    }
+    nav {
+        .navbar-brand{
+            color: $primaryColor;
+            font-weight: 800;
+            font-size: 30px;
+            text-transform: uppercase;
+            @media #{$smallMobileScreen} {
+                font-size: 25px;
+            }
+            img{
+                @include border(60px, 60px, 50%);
+                padding: 10px;
+                text-align: center;
+                font-size: 30px;
+                margin: -8px 8px 0 0;
+                @media #{$smallMobileScreen} {
+                    @include border(50px, 50px, 50%);
+                }
+            }
+        }
+        .navbar-toggler{
+            border: 1px solid $primaryColor;
+            padding: 8px 15px;
+            @include focus;
+            i{
+                color: $primaryColor;
+                font-size: 20px;
+            }
+        }
+    }
+    ul{
+        li{
+            .nav-link{
+                color: $darkColor;
+                font-size: 15px;
+                font-weight: 600;
+                text-transform: uppercase;
+                margin-left: 0.8rem;
+                transition: 0.5s;
+                &:hover{
+                    color: $primaryColor;
+                }
+                &:not(#add-property){
+                    padding-top: 10px;
+                }
+            }
+            a{
+                &:active{
+                    color: $primaryColor;
+                }
+            }
+            #add-property{
+                color: #fff;
+                padding: 10px 20px;
+                @media #{$smallLabScreen} {
+                    padding: 10px 15px;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+

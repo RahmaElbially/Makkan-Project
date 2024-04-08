@@ -1,0 +1,133 @@
+@import "../Components/heading";
+@import "../Helpers/mixins";
+@import "../Helpers/variables";
+@import "../Layout/grid";
+
+/*Start Footer*/
+
+footer{
+    background-color: $darkColor;
+    color: rgb(255 255 255 / 50%);
+    padding: 7rem 2rem;
+    .footer-info-data{
+        margin-bottom: 3rem;
+        .footer-info{
+            margin: 2rem 0 1rem;
+            list-style: none;
+            padding: 0;
+            li{
+                margin-bottom: 1rem;
+                font-size: 16px;
+                i{
+                    margin-right: 0.5rem;
+                }
+            }
+        }
+        .footer-social-media{
+            list-style: none;
+            padding: 0;
+            margin-top: 1.2rem;
+            .social-media{
+                @include border(35px, 35px, 50%);
+                border: 1px solid #fff;
+                text-align: center;
+                margin-right: 0.5rem;
+                cursor: pointer;
+                color: #fff;
+                transition: 0.5s;
+                &:hover{
+                    background-color: #fff;
+                    color: $primaryColor;
+                }
+            }
+        }
+    }
+    .footer-quick-links{
+        margin-bottom: 3rem;
+        .footer-links{
+            list-style: none;
+            padding: 0;
+            margin-top: 2rem;
+            li{
+                margin-bottom: 0.5rem;
+                i{
+                    font-size: 14px;
+                    margin-right: 0.6rem;
+                }
+                a{
+                    text-decoration: none;
+                    color: rgb(255 255 255 / 50%);
+                    transition: 0.5s;   
+                }
+                &:hover{
+                    a{
+                        letter-spacing: 1px;
+                    }
+                }
+            }
+        }
+    }
+    .footer-gallary{
+        margin-right: 2rem;
+        margin-bottom: 3rem;
+        .image-gallary{
+            margin-top: 2rem;
+            .footer-image{
+                border: 4px solid #fff;
+                border-radius: 5px;
+                margin: 0.3rem;
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .footer-newsletter{
+        p{
+            margin-top: 2rem;
+            width: 80%;
+            @media #{$mobileScreen} {
+                width: 100%;
+            }
+        }
+        .form{
+            position: relative;
+            @media #{$largeMobileScreen} {
+                text-align: center;
+            }
+            input{
+                background-color: transparent;
+                border: 1px solid rgb(255 255 255 / 50%);
+                padding: 1rem;
+                border-radius: 5px;
+                width: 80%;
+                @media #{$largeMobileScreen} {
+                    width: 65%;
+                }
+            }
+            button{
+                position: absolute;
+                padding: 10px;
+                left: 55%;
+                top: 10%;
+                @media #{$largeLabScreen} {
+                    left: 50%;
+                }
+                @media #{$smallLabScreen} {
+                    left: 45%;
+                }
+                @media #{$largeMobileScreen} {
+                    left: 70%;
+                }
+                @media #{$mobileScreen} {
+                    left: 59%;
+                }
+            }
+        }
+    }
+}
+
+/*End Footer*/
+
+
+
