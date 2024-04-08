@@ -640,25 +640,30 @@ body {
 
 /* End Perfect Place */
 /*Start Property Listing*/
+@media (max-width: 1400px) and (min-width: 1201px) {
+  .property-listing {
+    margin-top: -6rem !important;
+  }
+}
 @media (max-width: 1200px) and (min-width: 992px) {
   .property-listing {
-    margin-top: -6rem;
+    margin-top: -6rem !important;
   }
 }
 @media (max-width: 991px) and (min-width: 769px) {
   .property-listing {
-    margin-top: 28rem;
+    margin-top: 28rem !important;
   }
 }
 @media (max-width: 768px) {
   .property-listing {
-    margin-top: 22rem;
+    margin-top: 22rem !important;
     padding: 0 3rem;
   }
 }
 @media (max-width: 500px) {
   .property-listing {
-    margin-top: 18rem;
+    margin-top: 18rem !important;
     padding: 0 1rem;
   }
 }

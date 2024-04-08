@@ -279,18 +279,21 @@ body{
 /*Start Property Listing*/
 
 .property-listing{
+    @media #{$largeLabScreen} {
+        margin-top: -6rem !important;
+    }
     @media #{$smallLabScreen} {
-        margin-top: -6rem;
+        margin-top: -6rem !important;
     }
     @media #{$tabletScreen} {
-        margin-top: 28rem;
+        margin-top: 28rem !important;
     }
     @media #{$largeMobileScreen} {
-        margin-top: 22rem;
+        margin-top: 22rem !important;
         padding: 0 3rem;
     }
     @media #{$mobileScreen} {
-        margin-top: 18rem;
+        margin-top: 18rem !important;
         padding: 0 1rem;
     }
     @media #{$smallMobileScreen} {
