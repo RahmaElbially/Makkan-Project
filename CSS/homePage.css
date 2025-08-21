@@ -558,8 +558,7 @@ body {
   height: 100%;
   width: 90%;
   background-color: #00B98E;
-  -webkit-clip-path: polygon(30% 0, 80% 100%, 0 100%, 0 0);
-          clip-path: polygon(30% 0, 80% 100%, 0 100%, 0 0);
+  clip-path: polygon(30% 0, 80% 100%, 0 100%, 0 0);
 }
 .perfect-place .perfect-place-image .image-div {
   width: 82%;
